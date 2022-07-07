@@ -5,7 +5,7 @@ namespace OpcUa {
     public class Program {
 
         public static void Main() {
-            string url = "opc.tcp://localhost:4840/";
+            string url = "https://localhost:4840/";
             string dp = "ns=2;s=Temperature";
 
             try {
