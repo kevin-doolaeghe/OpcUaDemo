@@ -13,7 +13,7 @@ namespace OpcUa {
                 using (var server = new OpcServer(url, temperatureNode)) {
                     server.Started += (s, e) => Console.WriteLine("Successfully started OPC-UA server!\nServer URL: " + url + "\nAvailable datapoint(s): " + temperatureNode.Id);
                     server.Start();
-                    foreach(var e in server.GetEndpoints()) Console.WriteLine(e.Url);
+                    // foreach(var e in server.GetEndpoints()) Console.WriteLine(e.Url);
 
                     while (true) {
                         if (temperatureNode.Value == 110)
