@@ -5,8 +5,8 @@ namespace OpcUa {
     public class Program {
 
         public static void Main() {
-            string url = "opc.tcp://opcua.demo-this.com:51210/UA/SampleServer";
-            string dp = "ns=2; i=10239";
+            string url = "opc.tcp://localhost:4840/";
+            string dp = "ns=2;s=Temperature";
 
             try {
                 Console.WriteLine("OPC UA sample client started successfully.");
